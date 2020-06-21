@@ -7,9 +7,9 @@ import { RecipesComponent } from './recipes/recipes.component';
 import { RecipelistComponent } from './recipes/recipelist/recipelist.component';
 import { RecipedetailComponent } from './recipes/recipedetail/recipedetail.component';
 import { RecipeitemComponent } from './recipes/recipelist/recipeitem/recipeitem.component';
-import { ShoopinglistComponent } from './shoopinglist/shoopinglist.component';
 import { ShoopinglisteditComponent } from './shoopinglist/shoopinglistedit/shoopinglistedit.component';
-
+import { FormsModule } from '@angular/forms';
+import { ShoopinglistComponent } from './shoopinglist/shoopinglist.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,12 +19,10 @@ import { ShoopinglisteditComponent } from './shoopinglist/shoopinglistedit/shoop
     RecipedetailComponent,
     RecipeitemComponent,
     ShoopinglistComponent,
-    ShoopinglisteditComponent
+    ShoopinglisteditComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
