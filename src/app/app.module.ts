@@ -10,6 +10,7 @@ import { RecipeitemComponent } from './recipes/recipelist/recipeitem/recipeitem.
 import { ShoopinglisteditComponent } from './shoopinglist/shoopinglistedit/shoopinglistedit.component';
 import { FormsModule } from '@angular/forms';
 import { ShoopinglistComponent } from './shoopinglist/shoopinglist.component';
+import { Dropdowndirective } from './sharde/deopedown.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { ShoopinglistComponent } from './shoopinglist/shoopinglist.component';
     RecipeitemComponent,
     ShoopinglistComponent,
     ShoopinglisteditComponent,
+    Dropdowndirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
