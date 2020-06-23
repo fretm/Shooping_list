@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Ingredent } from '../sharde/ingredient.model';
+import { ShoopingService } from './shopping.service';
 
 @Component({
   selector: 'app-shoopinglist',
@@ -7,14 +8,11 @@ import { Ingredent } from '../sharde/ingredient.model';
   styleUrls: ['./shoopinglist.component.css'],
 })
 export class ShoopinglistComponent implements OnInit {
-  public ingredients: Ingredent[] = [
-    new Ingredent('Apple', 5),
-    new Ingredent('Tomato', 10),
-  ];
-  constructor() {}
+  public ingredients: Ingredent[];
 
-  ngOnInit(): void {}
-  oningredientaddes(ingrdeint: Ingredent) {
-    this.ingredients.push(ingrdeint);
+  constructor(private slservice: ShoopingService) {}
+
+  ngOnInit(): void {
+    this.ingredients = this.slservice.getingrident();
   }
 }

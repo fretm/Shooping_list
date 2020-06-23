@@ -5,11 +5,7 @@
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <app-recipeitem
-      *ngFor="let item of recipe"
-      [recipe]="item"
-      (recipeselected)="onrecipeselected(item)"
-    >
+    <app-recipeitem *ngFor="let item of recipe" [recipe]="item">
     </app-recipeitem>
   </div>
 </div>

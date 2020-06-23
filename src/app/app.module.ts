@@ -11,6 +11,7 @@ import { ShoopinglisteditComponent } from './shoopinglist/shoopinglistedit/shoop
 import { FormsModule } from '@angular/forms';
 import { ShoopinglistComponent } from './shoopinglist/shoopinglist.component';
 import { Dropdowndirective } from './sharde/deopedown.directive';
+import { ShoopingService } from './shoopinglist/shopping.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,8 +24,9 @@ import { Dropdowndirective } from './sharde/deopedown.directive';
     ShoopinglisteditComponent,
     Dropdowndirective,
   ],
+
   imports: [BrowserModule, FormsModule],
-  providers: [],
+  providers: [ShoopingService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
